@@ -28,7 +28,6 @@
                 document.getElementById('txt').style.backgroundColor = "rgba(28, 25, 55)";
                 document.getElementById('quote').style.color = "rgba(255, 255, 255)";
                 document.getElementById('ava').style.color = "rgba(255, 255, 255)";
-                document.getElementById('btn').style.backgroundImage = "url('img/send-black.png')";
                 document.getElementById('ttl').style.backgroundColor = "rgba(28, 25, 55)";
                 document.getElementById('title').style.color = "rgba(255, 255, 255)";
                 for (index = 0; index < counts.length; index++) {
@@ -54,7 +53,6 @@
                 document.getElementById('txt').style.backgroundColor = "rgba(255, 255, 255)";
                 document.getElementById('quote').style.color = "rgba(0, 0, 0)";
                 document.getElementById('ava').style.color = "rgba(0, 0, 0)";
-                document.getElementById('btn').style.backgroundImage = "url('img/send-white.png')";
                 document.getElementById('ttl').style.backgroundColor = "rgba(255, 255, 255)";
                 document.getElementById('title').style.color = "rgba(0, 0, 0)";
                 for (index = 0; index < counts.length; index++) {
@@ -171,7 +169,7 @@
         <div class="title" id="ttl">
             <span id="title">GERADOR DE FRASES DE FILMES</span>
         </div>   
-        <a onclick="change()" id="switch"><img id="img" src="img/sun.png" style="width: 60px; height: 60px; float: right; padding: 10px; transition: ease .3s;"></a>
+        <a onclick="change()" id="switch"><img id="img" src="img/sun.png"></a>
     </div>
     <body>
         <div class="container">
@@ -207,7 +205,7 @@
                     <span id="badCount">0</span>
                 </ul>     
             </div>
-            <button class="button" id="btn" onclick="rngQuote()"><img id="btnImg" src="img/send-black.png" style="width: 2vw; height: 4vh; margin-top: 18%;"></button>
+            <button class="button" id="btn" onclick="rngQuote()"><img id="btnImg" src="img/send-black.png" style="width: 4vw; height: 4vw; background-color: transparent;"></button>
         </div>
     </body>
 </html>

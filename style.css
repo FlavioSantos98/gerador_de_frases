@@ -67,8 +67,9 @@ label {
 }
 
 #switch {
+    position: relative;
     height: 9px;
-    right: 5%;
+    right: 2%;
 }
 
 body {
@@ -140,9 +141,9 @@ body {
     position: relative;
     display: inline-flex;
     align-items: flex-start;
-    height: 5vh;
+    height: 5vw;
     width: 5vw;
-    margin: 0 auto;
+    margin-right: 2%;
     padding: 0;
     border-width: 0;
 }
@@ -156,7 +157,7 @@ body {
     font-family: 'Fakt Pro', sans-serif;    
     font-size: clamp(.75rem, 1.1vw, 2rem);
     background-color: rgba(255, 255, 255);
-    border-radius: 15px;
+    border-radius: 5px;
     width: 50%;
     height: auto;
     text-align: justify;
@@ -195,8 +196,8 @@ p {
 }
 
 .oscar, .bad, .nice, .ok {
-    width: 2vw; 
-    height: 4vh;
+    width: 3.5vw; 
+    height: 3.5vw;
     position: relative;
     display: flex;
 }
@@ -250,11 +251,15 @@ input[type=checkbox] {
 }
 
 #img {
-    margin: 0 auto;
-    margin-right: 20px;
     position: relative;
+    display: flex;
     border: 1px solid rgba(0, 0, 0);
     border-radius: 100px;
+    width: 4vw; 
+    height: 4vw; 
+    float: right; 
+    padding: 10px;
+    bottom: 20%;
 }
 
 #img:hover {
