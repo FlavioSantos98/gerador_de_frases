@@ -10,8 +10,8 @@
         var i = 0;
 
         function change() {
-            var letters = document.querySelectorAll('#navg > ul > li > a')
-
+            var letters = document.querySelectorAll('#navg > ul > li > a');
+            const counts = ['oscarCount', 'niceCount', 'okCount', 'badCount'];
             if (i == 0) {
                 document.body.style.backgroundImage = "url('img/black.png')";
                 document.getElementById('navg').style.backgroundColor = "rgba(7, 20, 36)";
@@ -28,14 +28,16 @@
                 document.getElementById('txt').style.backgroundColor = "rgba(28, 25, 55)";
                 document.getElementById('quote').style.color = "rgba(255, 255, 255)";
                 document.getElementById('ava').style.color = "rgba(255, 255, 255)";
-                document.getElementById('btn').style.backgroundImage = "url('img/send-black')";
+                document.getElementById('btn').style.backgroundImage = "url('img/send-black.png')";
                 document.getElementById('ttl').style.backgroundColor = "rgba(28, 25, 55)";
                 document.getElementById('title').style.color = "rgba(255, 255, 255)";
+                for (index = 0; index < counts.length; index++) {
+                    document.getElementById(counts[index]).style.color = "rgba(255, 255, 255)";
+                    
+                }
                 letters.forEach((letter) => (letter.style.color = "rgba(255, 255, 255)"));
                 document.body.style.transition = "all ease 0.5s";
                 i++;
-
-                rgba(28, 25, 55)
             } else {
                 document.body.style.backgroundImage = "url('img/white.jpg')";
                 document.getElementById('navg').style.backgroundColor = "rgba(248, 235, 219)";
@@ -52,13 +54,16 @@
                 document.getElementById('txt').style.backgroundColor = "rgba(255, 255, 255)";
                 document.getElementById('quote').style.color = "rgba(0, 0, 0)";
                 document.getElementById('ava').style.color = "rgba(0, 0, 0)";
-                document.getElementById('btn').style.backgroundImage = "url('img/send-white')";
+                document.getElementById('btn').style.backgroundImage = "url('img/send-white.png')";
                 document.getElementById('ttl').style.backgroundColor = "rgba(255, 255, 255)";
                 document.getElementById('title').style.color = "rgba(0, 0, 0)";
+                for (index = 0; index < counts.length; index++) {
+                    document.getElementById(counts[index]).style.color = "rgba(0, 0, 0)";
+                    
+                }
                 letters.forEach((letter) => (letter.style.color = "rgba(0, 0, 0)"));
                 document.body.style.transition = "all ease 0.5s";
-                i--;
-                
+                i--;        
             }        
         }
 
