@@ -1,0 +1,263 @@
+@import url('http://fonts.cdnfonts.com/css/fakt-pro');
+
+*{
+    box-sizing: border-box;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: rgba(0, 0, 0);
+    display: block;
+    padding: 20px 5px;
+}
+
+nav a:hover {
+    background-color: rgba(155, 155, 155, .2);
+}
+
+.ul {
+    list-style: none;
+    position: relative;
+    width: 100%;
+    padding-left: 0;
+}
+
+#check, #check2 {
+    z-index: 9999;
+    display: none;
+}
+
+#check:checked ~ nav {
+    transform: translateX(150px);
+}
+
+#check:checked ~ #exit {
+    opacity: 1;
+    pointer-events: all;
+}   
+
+#check:checked ~ #check {
+    opacity: 0;
+    pointer-events: none;
+}   
+
+nav {
+    font-family: 'Fakt Pro', sans-serif;
+    background-color: rgba(248, 235, 219);
+    width: 150px;
+    left: -150px;
+    height: 100vh;
+    position: absolute;
+    transition: all .5s ease;
+    z-index: 9999;
+}
+
+label {
+    padding: 15px;
+    position: absolute;
+}
+
+#exit {
+    top: 7px;
+    left: 150px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .5s ease;
+}
+
+#switch {
+    height: 9px;
+    right: 5%;
+}
+
+body {
+    margin: 0 auto;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(248, 235, 219);
+    background-image: url('img/white.jpg');
+    background-position: center;
+    background-size: 30%, contain;
+    background-repeat: repeat;
+    position: relative;
+}
+
+.head {
+    position: relative;
+    height: 20%;
+    width: 100%;
+}
+
+.title {
+    background-color: rgba(255, 255, 255);
+    position: relative;
+    height: auto;
+    width: 30%;
+    font-size: clamp(.75rem, 1.4vw, 2.5rem);
+    font-family: 'Fakt Pro', sans-serif;    
+    top: 60%;
+    left: 60%;
+    display: flex;
+    border-radius: 5px;
+}
+
+#title {
+    position: relative;
+    margin: 1.5% 2%;
+}
+
+.quotes {
+    background-image: url('https://images5.alphacoders.com/464/464168.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    position: relative;
+    width: 50%;
+    height: 80%;
+    margin-left: 11%;
+    border: 1px solid rgba(255, 255, 255);
+    border-radius: 10px;
+}
+
+.container {
+    display: flex;
+    position: relative;
+    height: 60%;
+    width: 100%;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: space-around;
+    gap: 10px 20px;
+    margin: 20px;
+}
+
+.button {
+    background-color: transparent;
+    border-color: transparent;
+    position: relative;
+    display: inline-flex;
+    align-items: flex-start;
+    height: 5vh;
+    width: 5vw;
+    margin: 0 auto;
+    padding: 0;
+    border-width: 0;
+}
+
+.qt {
+    display: flex;
+    margin: 7px 15px;
+}
+
+.text {
+    font-family: 'Fakt Pro', sans-serif;    
+    font-size: clamp(.75rem, 1.1vw, 2rem);
+    background-color: rgba(255, 255, 255);
+    border-radius: 15px;
+    width: 50%;
+    height: auto;
+    text-align: justify;
+    position: relative;
+    margin-left: 11%;
+}
+
+.border {
+    width: 80%;
+    height: auto;
+    background-color: rgba(255, 255, 255);
+    border-radius: 10px;
+    margin-left: 11%;
+    position: relative;
+    display: flex;
+}
+
+#ava { 
+    font-size: clamp(.725rem, 1vw, 1.75em);
+    position: relative;
+    margin-top: 1.6%;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: 'Fakt Pro', sans-serif;
+}
+
+p {
+    color: rgba(0, 0, 0);
+}
+
+#oscarCount, #niceCount, #okCount, #badCount {
+    font-size: clamp(.725rem, 1vw, 1.75em);
+    font-family: 'Fakt Pro', sans-serif;
+    position: relative;
+    top: 15%;
+}
+
+.oscar, .bad, .nice, .ok {
+    width: 2vw; 
+    height: 4vh;
+    position: relative;
+    display: flex;
+}
+
+#oscar, #bad, #nice, #ok {
+    display: none;
+}
+
+.oscar:hover, .bad:hover, .nice:hover, .ok:hover {
+    transform: scale(1.2);
+    transition: all ease 1s;
+}
+
+.ul2 {
+    width: 35%;
+    display: flex;
+    list-style-type: none;
+    vertical-align: middle;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-around;
+    gap: 10px 10px;
+    position: relative;
+}
+
+.list2 {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-around;
+}
+
+input[type=checkbox] {
+    margin: 0 5px;
+}
+
+.bottom {
+    display: flex;
+    position: relative;
+    height: 15%;
+    width: 100%;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: flex-start;
+    align-content: space-around;
+    gap: 10px 20px;
+    margin: 20px;
+}
+
+#img {
+    margin: 0 auto;
+    margin-right: 20px;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0);
+    border-radius: 100px;
+}
+
+#img:hover {
+    bottom: 5px;
+    transition: ease-in-out 1s;
+}
